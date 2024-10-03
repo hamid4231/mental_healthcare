@@ -15,6 +15,8 @@ This application serves as a comprehensive platform for managing stress and anxi
 
 - ## Mental_Health_care UseCase: [Mental Health Care Project UseCase](https://drive.google.com/file/d/11JkDkyQBQFAfTwE7VD3i58ER_2mfqW1O/view?usp=sharing)
 
+- ## API Documentation: [Mental Health Care Application](https://api.postman.com/collections/36680903-82950e84-d953-462d-ad3b-17eebee21c63?access_key=PMAT-01J98S57VRPYXQMAGJM642PRDX)
+
 ## Key Features
 
 There are two branches in this repository:
@@ -35,22 +37,6 @@ There are two branches in this repository:
 ### Doctors:
 
 - Doctors can provide recommendations to end users regarding mental health.
-
-## How to Use
-
-1. Clone this repository.
-
-2. Copy the .env file for database configuration. Then, configure the database connection inside that file.
-
-3. Create a new database.
-
-sql
-CREATE DATABASE mental_health_care;
-
-4. Run the application.
-
-sh
-go run main.go
 
 ## Running with Docker
 

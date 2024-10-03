@@ -89,7 +89,7 @@ func (cc *ComplaintController) Create(c echo.Context) error {
 
 	return c.JSON(http.StatusOK, models.Response[models.Complaint]{
 		Status:  "Success",
-		Message: "Complaint updated",
+		Message: "Complaint created",
 		Data:    complaint,
 	})
 }
