@@ -56,40 +56,6 @@ func (rc *RecommendationController) GetByID(c echo.Context) error {
 	})
 }
 
-// func (rc *RecommendationController) Create(c echo.Context) error {
-// 	var recomandationReq models.RecommendationRequest
-
-// 	if err := c.Bind(&recomandationReq); err != nil {
-// 		return c.JSON(http.StatusBadRequest, models.Response[string]{
-// 			Status:  "Failed",
-// 			Message: "Invalid request",
-// 		})
-// 	}
-
-// 	err := recomandationReq.Validate()
-
-// 	if err != nil {
-// 		return c.JSON(http.StatusBadRequest, models.Response[string]{
-// 			Status:  "Failed",
-// 			Message: "Please complete all the required files",
-// 		})
-// 	}
-
-// 	recommendation, err := rc.service.Create(recomandationReq)
-
-// 	if err != nil {
-// 		return c.JSON(http.StatusInternalServerError, models.Response[string]{
-// 			Status:  "Failed",
-// 			Message: "Failed to create the recommendation",
-// 		})
-// 	}
-
-// 	return c.JSON(http.StatusCreated, models.Response[models.Recommendation]{
-// 		Status:  "Success",
-// 		Message: "Recommendation created",
-// 		Data:    recommendation,
-// 	})
-// }
 
 func (rc *RecommendationController) Create(c echo.Context) error {
 	var recommendationReq models.RecommendationRequest
